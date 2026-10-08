@@ -1,0 +1,22 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Research | Pixel Packers · LLASO Project 1</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=Space+Mono&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head><body>
+<header class="pg"><p class="eye">Our research</p><h1>What we found out</h1><p class="lead">Here is how we worked out what to pack, and what our early tests are telling us. Where a number comes from NASA, it has a source.</p></header>
+<section><div class="prose"><p class="eye">Sizing a supply</p><h2>What does a crew of four need for 14 days?</h2>
+<p>We started with NASA's published surface rates and multiplied them out: <b>rate × crew × days</b>. For us that is 4 crew × 14 days = 56 crew-days. <a class="c" href="bibliography.html#r2">[2]</a></p></div>
+<table><tr><th>Item</th><th>NASA rate</th><th>× 56 crew-days</th></tr>
+<tr><td>Food, as shipped</td><td>2.39 kg per crew-day</td><td>about 134 kg</td></tr>
+<tr><td>Water (drink 2.00 + food 0.50 + hygiene 0.40 + flush 0.30)</td><td>3.20 kg per crew-day</td><td>179.2 kg, plus 2.0 kg sampling = 181.2 kg</td></tr>
+<tr><td>Oxygen, metabolic</td><td>0.84 kg per crew-day</td><td>about 47 kg</td></tr></table>
+<div class="prose"><p>With three meals a day, that is 3 × 4 × 14 = <b>168 meals</b>. Food is a little higher on spacewalk days, so these are starting estimates that we will adjust. The food rate also includes packaging.</p></div></section>
+<section><div class="prose"><p class="eye">A surprise</p><h2>Is our container too big?</h2>
+<p>NASA's own early estimate for two crew on a 14-day mission is roughly <b>37.5 single-bag equivalents</b>, and one is about 0.053 m³. <a class="c" href="bibliography.html#r3">[3]</a><a class="c" href="bibliography.html#r2">[2]</a> Multiplying gives about 2 m³, so roughly 4 m³ if we double it for four crew. That is our own rough scaling.</p>
+<p>It means food and water alone will not fill a 40 ft container. We now have to decide what else belongs there (racks, aisles, spares, tools, waste and return cargo) and be able to say why.</p></div></section>
+<section><div class="prose"><p class="eye">Box or tube?</p><h2>Our shape comparison</h2>
+<p>If we use a 40 × 8 × 8 ft box, that is 2,560 ft³, or about <b>72.5 m³</b> (multiply cubic feet by 0.0283). A 3 m wide, 12.19 m long cylinder is about <b>86.2 m³</b> (π × 1.5² × 12.19). The box size is our own assumption, and both are gross volumes, not usable space.</p>
+<p>A cylinder wastes space because the biggest rectangle you can fit in a circle covers only 2/π, about <b>63.7%</b>, of it. That leaves roughly 36% in the corners, which is why we are focusing on the box.</p>
+<p>We wrote a packing algorithm to test this. In our early run the rectangle held <b>418 items</b> against <b>325</b> for the cylinder, and a middle entrance cut average robot travel from about <b>20.2 ft to 10.1 ft</b> per item. These are early results and we are still documenting the method. <span class="todo">[Link the algorithm file and say what items and rules it used]</span></p></div>
+<div class="two"><div class="ph">PLACEHOLDER · Chart: capacity, rectangle vs cylinder</div><div class="ph">PLACEHOLDER · Chart: front vs middle entrance travel</div></div></section>
+<section><div class="prose"><p class="eye">Borrowing ideas</p><h2>What NASA's packing contest taught us</h2>
+<p>NASA ran a public contest for packing cargo into its planned Gateway logistics module. The winners and honorable mentions leaned toward simple, modular layouts and made access easy for the crew. <a class="c" href="bibliography.html#r4">[4]</a><a class="c" href="bibliography.html#r5">[5]</a> That matches what we keep coming back to: a design we can explain and a clear path through the container.</p>
+<p class="todo">[Add: what we are still researching, such as locker sizes, cold storage and robot options]</p></div></section>
+<script src="js/main.js"></script></body></html>

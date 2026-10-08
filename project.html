@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Project | Pixel Packers · LLASO Project 1</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=Space+Mono&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head><body>
+<header class="pg"><p class="eye">Our project</p><h1>The game we are building</h1>
+<p class="lead">NASA HUNCH asked for a lunar cargo simulation: pack a container on Earth, unload it on the Moon. <a class="c" href="bibliography.html#r1">[1]</a> This is how we are answering it.</p></header>
+<section><div class="prose"><p class="eye">The idea</p><h2>Replayable, first person, and scored</h2>
+<p>We sketched the game on a whiteboard in September. It is <b>completely first person</b> and has <b>two phases</b>: Earth and Moon. There is no end goal, so you can replay it. Your score depends on <b>efficiency and time</b>, and the supplies are <b>randomized</b> each run.</p>
+<p>Players keep track of what they load with a small tablet that logs where every item was placed. A mission lander talks to you through dialogue, and we may add a rocket ride to the Moon for polish.</p></div>
+<div class="two"><div class="side"><h3>Phase 1 · Earth</h3><p style="color:var(--m)">You pack a long cargo container. We think about it as loading Day 14 supplies first, so the Day 1 supplies are by the door when we land.</p></div>
+<div class="side"><h3>Phase 2 · Moon</h3><p style="color:var(--m)">You unload with a robot helper. The container opens, you pull out what the crew needs first, and the log updates as things leave.</p></div></div>
+<figure style="max-width:560px"><div class="ph">PLACEHOLDER · Drop in Davin's storyboards or a Unity screenshot</div></figure></section>
+<section><p class="eye">Try it</p><h2>Pack it yourself</h2><p class="lead">A tiny taste of Phase 1. Six crates need to go in. Click them in loading order, with the last-needed day first.</p>
+<div id="game"><div id="gt">0.0 s</div><div id="gm"></div><div id="crates"></div><div class="bayrow" id="bay"><small>container, door side →</small></div><p style="margin-top:14px"><button class="btn" id="again">New round</button></p></div></section>
+<section><div class="prose"><p class="eye">Decisions so far</p><h2>What we have settled on</h2>
+<p>We chose a <b>14-day</b> mission and are planning for a crew of four. Our teacher passed along advice from HUNCH that a door in the <b>middle</b> of the container could cut how far a robot has to travel, and that a moving rack is worth a look. We are testing that idea.</p>
+<p>We are aiming to have a couple of basic missions working for the PDR, such as building the 14-day manifest and loading in reverse order, and to save the harder ones for later. <span class="todo">[Confirm which missions you are targeting]</span></p>
+<p class="todo">[Add: what is working in Unity right now]</p></div></section>
+<script src="js/main.js"></script></body></html>
